@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-export default function InvestmentFormFields({ label, onInput }) {
-    const [fieldValue, setFieldValue] = useState(0);
+export default function InvestmentFormFields({ label, onInput, initialValue }) {
+    const [fieldValue, setFieldValue] = useState(initialValue);
 
     function valueChangeHandler(event) {
         setFieldValue(event.target.value);
